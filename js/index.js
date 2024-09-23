@@ -21,7 +21,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
 
     const total1 = getTotal('noakhali-balance', addMoney);
 
-    // showModal();
+    openModal();
 
    
 
@@ -81,6 +81,8 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
      const left  = totalBalance('total-balance',addMoney1);
      const total2 = getTotal('feni-balance',addMoney1);
 
+     openModal();
+
      const currentDate = new Date();
 
      const p = document.createElement('p');
@@ -128,7 +130,7 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     
     if (addMoney2 > totalBalanceAll) {
         alert("Donation amount cannot exceed total available balance!");
-        
+        return;
     }
 
 
@@ -138,6 +140,8 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     
     const left  = totalBalance('total-balance',addMoney2);
     const total3 = getTotal('quota-balance',addMoney2);
+
+    openModal();
 
     const currentDate = new Date();
 
