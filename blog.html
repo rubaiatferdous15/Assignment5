@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <main>
+
+        <header class="flex justify-between items-center w-full mb-40">
+            <button id="blog-btn" class="btn btn-lg bg-green-200 ml-8 mt-2">Blog</button>
+
+           <div class="flex">
+            <img src="assets/logo.png" alt="">
+            <h1 class="font-bold mt-3 ml-2">Donation Bangladesh</h1>
+
+           </div>
+
+           <div class="flex gap-1 mr-8">
+            <img id="balance" src="assets/coin.png" alt=""><span id="total-balance">5500</span><span>BDT</span>
+           </div>
+
+           
+        </header>
+
+
+
+        <h4 class="font-bold text-2xl mx-auto justify-center flex m-5">Important FAQ</h4>
+        
+          <div class="flex justify-center items-center min-h-screen p-4">
+            <section class="w-full max-w-lg md:max-w-2xl lg:max-w-4xl">
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p>the DOM acts as a bridge between HTML and JavaScript, enabling real-time interactions with the webpage.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>getElementById(): Selects an element by its ID. <br>querySelector(): Selects the first element that matches a CSS selector. <br>getElementsByClassName(): Selects all elements with a specific class name. <br>getElementsByTagName(): Selects all elements by their tag name.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>
+                    Event delegation is a technique in JavaScript where a single event listener is added to a parent element instead of individual listeners for each child element. When an event occurs on a child element, it bubbles up to the parent, allowing the parents event listener to handle it.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>Attributes: <br>
+                    Get an attribute: element.getAttribute('attributeName'); <br>
+                    Set an attribute: element.setAttribute('attributeName', 'newValue'); <br>
+                    Remove an attribute: element.removeAttribute('attributeName'); <br><br>
+                    Styles: <br>
+                    Change a style property: element.style.propertyName = 'value'; (e.g., element.style.color = 'red';)
+                    </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          
+    </main>
+    
+</body>
+</html>

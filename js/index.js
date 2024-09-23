@@ -3,7 +3,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
     const addMoney = getInputValue('noakhali-donation');
     console.log(addMoney);
 
-    if (isNaN(addMoney)) {
+    if (isNaN(addMoney)|| addMoney<=0) {
         alert("NOOOOO");
         return;
     }
@@ -21,6 +21,8 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
 
     const total1 = getTotal('noakhali-balance', addMoney);
 
+   
+
     const currentDate = new Date();
 
     const p = document.createElement('p');
@@ -30,6 +32,9 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
 
     const historyTab = document.getElementById('history-tab');
     historyTab.insertBefore(p, historyTab.firstChild);
+
+    alert(`You Have donated ${addMoney} for Flood Relief in Noakhali,Bangladesh!`);
+    return;
 });
 
 
@@ -41,7 +46,7 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
     const addMoney1 = getInputValue('feni-donation');
     console.log(addMoney1);
 
-    if(isNaN(addMoney1)){
+    if(isNaN(addMoney1)|| addMoney1<=0){
         alert("NOOOOO");
         return;
     }
@@ -56,9 +61,10 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
     
 
-     const total2 = getTotal('feni-balance',addMoney1);
+     
 
-     const left  = totalBalance('total-balance',total2);
+     const left  = totalBalance('total-balance',addMoney1);
+     const total2 = getTotal('feni-balance',addMoney1);
 
      const currentDate = new Date();
 
@@ -73,6 +79,10 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
 
 
+     alert(`You Have donated ${addMoney1} for Flood in Feni,Bangladesh!`);
+     return;
+
+
 
 
 })
@@ -83,7 +93,7 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     const addMoney2 = getInputValue('quota-donation');
     console.log(addMoney2);
 
-    if(isNaN(addMoney2)){
+    if(isNaN(addMoney2)|| addMoney2<=0){
         alert("NOOOOO");
         return;
     }
@@ -100,8 +110,9 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     
 
     
+    
+    const left  = totalBalance('total-balance',addMoney2);
     const total3 = getTotal('quota-balance',addMoney2);
-    const left  = totalBalance('total-balance',total3);
 
     const currentDate = new Date();
 
@@ -115,6 +126,9 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
 
     const historyTab = document.getElementById('history-tab');
     historyTab.insertBefore(p, historyTab.firstChild);
+
+    alert(`You Have donated ${addMoney2} for Quota Movement,Bangladesh!`);
+    return;
 
 
 })
