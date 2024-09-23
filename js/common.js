@@ -16,15 +16,19 @@ function getTotal(id1,a){
 }
 
 
-function totalBalance(id,b){
-    const overall = parseFloat (document.getElementById(id).innerText);
 
-    const leftBalance = parseFloat(overall) - parseFloat(b);
+function totalBalance(id, b) {
+    const overall = parseFloat(document.getElementById(id).innerText);
 
-    return  document.getElementById('total-balance').innerText = parseFloat(leftBalance);
+    const leftBalance = overall - b;
 
+    
+    document.getElementById(id).innerText = leftBalance;
 
+    
+    return leftBalance;
 }
+
 
 
 function showElementbyId(id){
