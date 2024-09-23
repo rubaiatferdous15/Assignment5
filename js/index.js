@@ -21,6 +21,8 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
 
     const total1 = getTotal('noakhali-balance', addMoney);
 
+    // showModal();
+
    
 
     const currentDate = new Date();
@@ -28,13 +30,26 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
     const p = document.createElement('p');
     p.innerText = `${addMoney} is donated for Flood Relief in Noakhali,Bangladesh\n${currentDate}`;
 
-    p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+    p.classList.add(  'w-full',        
+        'max-w-5xl',       
+        'bg-gray-200',     
+        'p-3',             
+        'text-black',      
+        'flex',           
+        'items-center',    
+        'mx-auto',         
+        'my-4',            
+        'rounded-lg',     
+        'shadow-lg' );
 
     const historyTab = document.getElementById('history-tab');
     historyTab.insertBefore(p, historyTab.firstChild);
 
     alert(`You Have donated ${addMoney} for Flood Relief in Noakhali,Bangladesh!`);
-    return;
+    
+
+ 
+    
 });
 
 
@@ -72,7 +87,17 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
      p.innerText = `${addMoney1} is donated for Flood in Feni,Bangladesh
      ${currentDate}`
      
-     p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+     p.classList.add(  'w-full',        
+        'max-w-5xl',       
+        'bg-gray-200',     
+        'p-3',             
+        'text-black',      
+        'flex',           
+        'items-center',    
+        'mx-auto',         
+        'my-4',            
+        'rounded-lg',     
+        'shadow-lg' );
 
      const historyTab = document.getElementById('history-tab');
      historyTab.insertBefore(p, historyTab.firstChild);
@@ -103,7 +128,7 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     
     if (addMoney2 > totalBalanceAll) {
         alert("Donation amount cannot exceed total available balance!");
-        return;
+        
     }
 
 
@@ -121,14 +146,23 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     p.innerText = `${addMoney2} is donated for Quota Movement in Bangladesh
     ${currentDate}`
 
-    p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+    p.classList.add(  'w-full','max-w-5xl',       
+        'bg-gray-200',     
+        'p-3',             
+        'text-black',      
+        'flex',           
+        'items-center',    
+        'mx-auto',         
+        'my-4',            
+        'rounded-lg',     
+        'shadow-lg' );
 
 
     const historyTab = document.getElementById('history-tab');
     historyTab.insertBefore(p, historyTab.firstChild);
 
     alert(`You Have donated ${addMoney2} for Quota Movement,Bangladesh!`);
-    return;
+
 
 
 })
