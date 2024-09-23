@@ -25,3 +25,12 @@ function totalBalance(id,b){
 
 
 }
+
+
+function showElementbyId(id){
+    document.getElementById('donation-tab').classList.add('hidden');
+    document.getElementById('history-tab').classList.add('hidden');
+
+
+    document.getElementById(id).classList.remove('hidden');
+}

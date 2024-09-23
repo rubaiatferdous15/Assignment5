@@ -21,6 +21,21 @@ document.getElementById('noakhali-btn').addEventListener('click',function(event)
 
     const left  = totalBalance('total-balance',total1);
 
+    const currentDate = new Date();
+
+
+     const p = document.createElement('p');
+     p.innerText = `${addMoney} is donated for Flood Relief in Noakhali,Bangladesh
+     ${currentDate}`
+
+     p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+
+     
+
+     const historyTab = document.getElementById('history-tab');
+     historyTab.insertBefore(p, historyTab.firstChild);
+
+
 
 })
 
@@ -42,6 +57,18 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
      const left  = totalBalance('total-balance',total2);
 
+     const currentDate = new Date();
+
+     const p = document.createElement('p');
+     p.innerText = `${addMoney1} is donated for Flood in Feni,Bangladesh
+     ${currentDate}`
+     
+     p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+
+     const historyTab = document.getElementById('history-tab');
+     historyTab.insertBefore(p, historyTab.firstChild);
+
+
 
 
 
@@ -59,12 +86,37 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     }
 
     
+
+    
     const total3 = getTotal('quota-balance',addMoney2);
     const left  = totalBalance('total-balance',total3);
 
+    const currentDate = new Date();
+
+
+    const p = document.createElement('p');
+    p.innerText = `${addMoney2} is donated for Quota Movement in Bangladesh
+    ${currentDate}`
+
+    p.classList.add('h-[136px]', 'w-[1140px]', 'bg-gray-200', 'p-3', 'text-black', 'flex', 'items-center', 'mx-auto', 'my-4', 'rounded-lg');
+
+
+    const historyTab = document.getElementById('history-tab');
+    historyTab.insertBefore(p, historyTab.firstChild);
+
+
+})
 
 
 
+document.getElementById('donation-btn').addEventListener('click',function(){
+    showElementbyId('donation-tab');
+})
+
+document.getElementById('history-btn').addEventListener('click',function(){
+    showElementbyId('history-tab');
+
+    
 })
 
 

@@ -9,6 +9,8 @@
   
 <body>
     <main>
+
+    
         <header class="flex justify-between items-center w-full mb-40">
             <button class="btn btn-lg bg-green-200 ml-8 mt-2">Blog</button>
 
@@ -26,11 +28,11 @@
         </header>
 
         <div class="flex justify-center p-9 gap-2 mb-40">
-            <button class="btn btn-lg bg-green-200">Donation</button>
-            <button class="btn btn-lg">History</button>
+            <button id="donation-btn" class="btn btn-lg bg-green-200">Donation</button>
+            <button id="history-btn" class="btn btn-lg">History</button>
         </div>
 
-
+      <section id="donation-tab" >
         <section class="h-[453px] w-[1140px] mx-auto mb-60">
             <div class="card lg:card-side bg-base-100 shadow-xl">
                 <figure>
@@ -92,7 +94,14 @@
                 </div>
             </div>
         </section>
+      </section> 
 
+      <section id="history-tab" class="hidden">
+        
+      </section>
+
+
+     
        
         
     </main>
