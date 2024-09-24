@@ -8,6 +8,8 @@ document.getElementById('noakhali-btn').addEventListener('click', function(event
         return;
     }
 
+    
+
     const totalBalanceAll = parseFloat(document.getElementById('total-balance').innerText);
 
     if (addMoney > totalBalanceAll) {
